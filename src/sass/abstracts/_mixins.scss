@@ -1,0 +1,14 @@
+@mixin moveOnLoadAnimation($moveInFrom, $duration) {
+  // all of these are only for animations
+  animation-name: $moveInFrom; // argument
+  animation-duration: $duration;
+  animation-timing-function: ease-out;
+  // we can use mixin without argument as well
+}
+
+@mixin frontAndBack--card {
+  padding: 2em;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: var(--shadow);
+}

@@ -1,0 +1,160 @@
+@import '../../sass/base/animations';
+@import '../../sass/abstracts/mixins';
+
+.navigation {
+  backface-visibility: hidden;
+
+  &_checkbox {
+    display: none;
+  }
+
+  &_button {
+    background-color: white;
+    height: 3rem;
+    width: 3rem;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    z-index: 2000;
+    // aligning the 3 lines on the nav btn
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &_background {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 2.5rem;
+    right: 2.5rem;
+    background: rgb(52, 68, 102);
+    z-index: 1000;
+    // transition is only for single functionallity
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+
+  &_nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+
+    width: 0;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  &_list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+  }
+
+  &_item {
+    margin: 1rem;
+  }
+
+  // inside of the sidebar
+  &_link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      border-radius: 0.5rem;
+      font-size: 2rem;
+      font-weight: 300;
+      padding: 0.5rem 2rem;
+      color: whitesmoke;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-image: linear-gradient(
+        130deg,
+        rgb(255, 225, 0) 0%,
+        rgb(172, 73, 37) 50%,
+        whitesmoke 50%
+      );
+      background-size: 250%;
+      transition: all 400ms;
+    }
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: rgb(87, 49, 168);
+      transform: translateX(1rem);
+      // this is pushing it to the rightside
+    }
+  }
+
+  // functionality to make the background from the side bar expand
+  &_checkbox:checked ~ &_background {
+    // this 2 element are sibling thats why we are using ~ symbol
+    transform: scale(100);
+  }
+  &_checkbox:checked ~ &_nav {
+    opacity: 1;
+    width: 100%;
+  }
+
+  // icon
+
+  &_icon {
+    position: relative;
+    top: 1.4rem;
+
+    // refer to just the icon it self === &_icon,&_icon::before, &_icon::after
+    &,
+    &::before,
+    &::after {
+      width: 1.6rem;
+      height: 2px;
+      background-color: black;
+      display: inline-block;
+    }
+    // handling them together
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      transition: all 1s;
+    }
+
+    // handling each one separately
+    &::before {
+      top: -0.5rem;
+    }
+
+    &::after {
+      top: 0.5rem;
+    }
+  }
+
+  &_button:hover &_icon::before {
+    top: -0.65rem;
+  }
+
+  &_button:hover &_icon::after {
+    top: 0.65rem;
+  }
+
+  //making the X
+  &_checkbox:checked + &_button &_icon {
+    background: transparent;
+  }
+
+  &_checkbox:checked + &_button &_icon::before {
+    top: 0;
+    transform: rotate(360deg + 45deg);
+  }
+
+  &_checkbox:checked + &_button &_icon::after {
+    top: 0;
+    transform: rotate(-360deg + (-45deg));
+  }
+}

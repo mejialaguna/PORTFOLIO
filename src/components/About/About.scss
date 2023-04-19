@@ -1,0 +1,47 @@
+@import '../../sass/abstracts/mixins';
+@import '../../sass/base/animations';
+
+.about {
+  flex-direction: column;
+  margin-top: 3em;
+  backface-visibility: hidden; // to avoid the flicker on the animations below
+
+  .moveLeft {
+    @include moveOnLoadAnimation(moveInLeft, 1s);
+    // animations coming from sass/abstracts/mixins
+  }
+
+  &__name {
+    color: --clr-primary;
+  }
+  &__role {
+    margin-top: 1.2em;
+    @include moveOnLoadAnimation(moveInRight, 900ms);
+  }
+
+  &__desc {
+    font-size: 1rem;
+    max-width: 40rem;
+    @include moveOnLoadAnimation(bottonUp, 900ms);
+  }
+}
+
+.about__desc,
+.about__contact {
+  margin-top: 2.4em;
+}
+
+.about .link--icon {
+  margin-right: 0.8em;
+}
+
+.about .btn--outline {
+  margin-right: 1em;
+}
+
+@media (max-width: 60rem) {
+  .app .about {
+    align-items: flex-start;
+    margin-top: 2em;
+  }
+}
