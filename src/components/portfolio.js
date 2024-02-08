@@ -11,7 +11,7 @@ const about = {
   description:
     "computer programmer who is proficient in both front and back end coding. Their primary responsibilities include designing user interactions on websites, developing servers, and databases for website functionality, and coding for mobile platforms.",
   resume:
-    "https://docs.google.com/document/d/1IQp0sbz_pEytnZKSWT1QhlGhAf2iYAZNf1WZundt3GY/edit?usp=sharing",
+    "https://drive.google.com/file/d/1mvIaq_KlqElPLVRfHnbL_qupNXoO4qgU/view?usp=sharing",
   social: {
     linkedin: "https://www.linkedin.com/in/jose-luis-mejia-laguna-961306164/",
     github: "https://github.com/mejialaguna?tab=repositories",
