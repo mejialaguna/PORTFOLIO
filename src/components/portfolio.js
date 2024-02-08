@@ -164,6 +164,35 @@ const projects = [
     sourceCode: "https://github.com/mejialaguna/nell-pipi",
     livePreview: "https://kidstube.vercel.app",
   },
+  {
+    name: "Geolocation - Application",
+    description:
+      "Welcome to our intuitive Small Map Geolocator App! Seamlessly explore your surroundings by effortlessly searching for nearby places. Whether you're looking for restaurants, landmarks, or services, our app provides you with a user-friendly interface to discover what's around you. Get precise turn-by-turn directions, ensuring you reach your destination effortlessly. Simplify your journey with our powerful geolocation features, making exploration and Reaching places with ease!",
+    stack: [
+      "Html",
+      "|",
+      "Java Script",
+      "|",
+      "Type Script",
+      "|",
+      "Vite",
+      "|",
+      "React-Js",
+      "|",
+      "Tailwind",
+      "|",
+      "Animate",
+      "|",
+      "Axios",
+      "|",
+      "Mapbox",
+      "|",
+      "vercel",
+    ],
+    DeploymentSite: "Deployment site: Vercel",
+    sourceCode: "https://github.com/mejialaguna/map-app",
+    livePreview: "https://geolocation-app-psi.vercel.app/",
+  },
 ];
 
 const skills = [
