@@ -167,7 +167,7 @@ const projects = [
   {
     name: "Geolocation - Application",
     description:
-      "Welcome to our intuitive Small Map Geolocator App! Seamlessly explore your surroundings by effortlessly searching for nearby places. Whether you're looking for restaurants, landmarks, or services, our app provides you with a user-friendly interface to discover what's around you. Get precise turn-by-turn directions, ensuring you reach your destination effortlessly. Simplify your journey with our powerful geolocation features, making exploration and Reaching places with ease!",
+      "Intuitive Small Map Geolocator App! Seamlessly explore your surroundings by effortlessly searching for nearby places. Whether you're looking for restaurants, landmarks, or services, our app provides you with a user-friendly interface to discover what's around you. Get precise turn-by-turn directions, Reaching places with ease!.",
     stack: [
       "Html",
       "|",
