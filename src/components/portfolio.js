@@ -64,7 +64,7 @@ const projects = [
     ],
     DeploymentSite: "Deployment site: Heroku",
     sourceCode: "https://github.com/mejialaguna/lil-tweet.git",
-    livePreview: "https://lil-tweet.herokuapp.com/",
+    livePreview: "https://lil-tweet-7025b0481149.herokuapp.com/",
   },
   {
     name: "Journey Diary",
