@@ -162,7 +162,7 @@ const projects = [
     ],
     DeploymentSite: "Deployment site: Vercel",
     sourceCode: "https://github.com/mejialaguna/nell-pipi",
-    livePreview: "https://kidstube.vercel.app",
+    livePreview: "https://nell-pipi.vercel.app/",
   },
   {
     name: "Geolocation - Application",
